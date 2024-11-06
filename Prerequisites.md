@@ -18,7 +18,7 @@
     az aks install-cli
     ```
 
-## 5. Docker
+## 5. Docker ( needed only if there are containers created locally)
 - Install Docker on your local machine. You can download and install it from [Docker Installation](https://docs.docker.com/get-docker/).
 
 ## 6. Helm
