@@ -18,7 +18,7 @@
     az aks install-cli
     ```
 
-## 5. Docker (needed only if new container images need to be created)
+## 5. Docker
 - Install Docker on your local machine. You can download and install it from [Docker Installation](https://docs.docker.com/get-docker/).
 
 ## 6. Helm
@@ -33,25 +33,26 @@
     - IntelliJ IDEA
     - Sublime Text
 
-## 9. Azure Service Principal
-- Create an Azure Service Principal for AKS to interact with other Azure resources. You can create it using the Azure CLI:
-    ```sh
-    az ad sp create-for-rbac --skip-assignment
-    ```
-
-## 10. Network Configuration
+## 9. Network Configuration
 - Ensure your network configuration allows communication between your local machine and the Azure resources.
 
-## 11. Resource Group
+## 10. Resource Group
 - Create a resource group in Azure where your AKS cluster will reside:
     ```sh
     az group create --name myResourceGroup --location eastus
     ```
 
-## 12. AKS Cluster
-- Create an AKS cluster using the Azure CLI:
+## 11. AKS Cluster
+- Create an AKS cluster with a system pool and a user agent pool using the Azure CLI:
     ```sh
-    az aks create --resource-group myResourceGroup --name myAKSCluster --node-count 1 --enable-addons monitoring --generate-ssh-keys
+    az aks create --resource-group myResourceGroup --name myAKSCluster --node-count 1 --enable-addons monitoring --generate-ssh-keys --nodepool-name systempool --nodepool-labels agentpool=system --nodepool-mode System
+
+    az aks nodepool add --resource-group myResourceGroup --cluster-name myAKSCluster --name userpool --node-count 2 --nodepool-labels agentpool=user --nodepool-mode User
+    ```
+## 12. Managed Identity
+- Use a managed identity for AKS to interact with other Azure resources. 
+    ```sh
+    az aks update --resource-group myResourceGroup --name myAKSCluster --enable-managed-identity
     ```
 
 ## 13. Connect to AKS Cluster
@@ -66,4 +67,4 @@
     kubectl get nodes
     ```
 
-By following these prerequisites, you will be ready to create and work on an AKS cluster.
+Now you should be ready to work on the AKS cluster created.
