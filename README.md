@@ -9,8 +9,8 @@ This repository contains various sample workloads and configurations for deployi
 | 1                | Creating AKS cluster                 | [Prerequisites](./Prerequisites.md)       |
 | 2                | Setting up AKS cluster access        | [Setup](./Setup.md)                       |
 | 3                | Deploy a simple web application      | [Challenge 1](./Challenge-01.md)          |
-| 4                | Set up a CI/CD pipeline              | [Challenge 2](./Challenge-02.md)          |
-| 5                | Implement autoscaling                | [Challenge 3](./Challenge-03.md)          |
+| 4                | Create a Load Balancer type Service  | [Challenge 2](./Challenge-02.md)          |
+| 5                | Deploy a microservice to AKS         | [Challenge 3](./Challenge-03.md)          |
 
 Feel free to explore the repository and use the provided resources to enhance your understanding of AKS workloads.
 
