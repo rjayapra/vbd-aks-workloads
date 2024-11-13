@@ -54,7 +54,7 @@ Replace `<your-aks-resource-group>` and `<your-aks-cluster-name>` with the appro
 You have now successfully assigned the `ACRPull` role to the managed identity of your AKS cluster, allowing it to pull images from your Azure Container Registry.
 
 
-### 5. Run the deployments
+### 6. Run the deployments
 
 Now replace the image name in [aks-store-quickstart.yaml](./config/aks-store-quickstart.yaml) to use your container registry
 ```
