@@ -23,9 +23,9 @@ az acr login --name $ACR_NAME
 
 ### 3. Import the Image from GitHub Container Registry to Azure Container Registry
 ```bash
-az acr import -g $ACR_RESOURCE_GROUP --name $ACR_NAME --source ghcr.io/azure-samples/aks-store-demo/product-service:latest --image $ACR_NAME.azurecr.io/aks-store-demo/product-service:latest
-az acr import -g $ACR_RESOURCE_GROUP --name $ACR_NAME --source ghcr.io/azure-samples/aks-store-demo/order-service:latest --image $ACR_NAME.azurecr.io/aks-store-demo/order-service:latest
-az acr import -g $ACR_RESOURCE_GROUP --name $ACR_NAME --source ghcr.io/azure-samples/aks-store-demo/store-front:latest --image $ACR_NAME.azurecr.io/aks-store-demo/store-front:latest
+az acr import -g $ACR_RESOURCE_GROUP --name $ACR_NAME --source ghcr.io/azure-samples/aks-store-demo/product-service:latest --image aks-store-demo/product-service:latest
+az acr import -g $ACR_RESOURCE_GROUP --name $ACR_NAME --source ghcr.io/azure-samples/aks-store-demo/order-service:latest --image aks-store-demo/order-service:latest
+az acr import -g $ACR_RESOURCE_GROUP --name $ACR_NAME --source ghcr.io/azure-samples/aks-store-demo/store-front:latest --image aks-store-demo/store-front:latest
 ```
 
 ### 4. Verify the Image in Azure Container Registry
