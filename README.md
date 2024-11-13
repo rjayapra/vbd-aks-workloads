@@ -11,6 +11,11 @@ This repository contains various sample workloads and configurations for deployi
 | 3                | Deploy a simple web application      | [Challenge 1](./Challenge-01.md)          |
 | 4                | Create a Load Balancer type Service  | [Challenge 2](./Challenge-02.md)          |
 | 5                | Deploy a microservice to AKS         | [Challenge 3](./Challenge-03.md)          |
+| 6                | Troubleshooting                      | [Challenge 4](./Challenge-04.md)          |
+| 7                | Working with ACR                     | [Challenge 5](./Challenge-05.md)          |
+| 8                | HPA                                  | [Challenge 6](./Challenge-06.md)          |
+| 9                | Helm charts                          | [Challenge 7](./Challenge-07.md)          |
+
 
 Feel free to explore the repository and use the provided resources to enhance your understanding of AKS workloads.
 
