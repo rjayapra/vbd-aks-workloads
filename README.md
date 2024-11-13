@@ -15,6 +15,7 @@ This repository contains various sample workloads and configurations for deployi
 | 7                | Working with ACR                     | [Challenge 5](./Challenge-05.md)          |
 | 8                | HPA                                  | [Challenge 6](./Challenge-06.md)          |
 | 9                | Helm charts                          | [Challenge 7](./Challenge-07.md)          |
+| 10               | Ingress                              | [Challenge 8](./Challenge-08.md)          |
 
 
 Feel free to explore the repository and use the provided resources to enhance your understanding of AKS workloads.

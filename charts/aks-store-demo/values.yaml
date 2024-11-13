@@ -4,7 +4,7 @@
 
 replicaCount: 1
 
-namespace: "<your-namespace>"
+namespace: "rjdev"
 
 useRabbitMQ: true # when true, local rabbitmq container will be used
 useMongoDB:  true # when true, local mongodb container will be used
@@ -21,17 +21,17 @@ orderService:
   queueName: "orders"
   queueTransport: ""
   image:
-    repository: "<your-registry>/aks-store-demo/order-service"
+    repository: "aksworkshopdemo.azurecr.io/aks-store-demo/order-service"
     tag: "latest"
 
 productService:
   image:
-    repository: "<your-registry>/aks-store-demo/product-service"
+    repository: "aksworkshopdemo.azurecr.io/aks-store-demo/product-service"
     tag: "latest"
 
 storeFront:
   image:
-    repository: "<your-registry>/aks-store-demo/store-front"
+    repository: "aksworkshopdemo.azurecr.io/aks-store-demo/store-front"
     tag: "latest"
   serviceType: LoadBalancer
 
