@@ -1,4 +1,4 @@
-[< Previous: Challenge 06](./Challenge-06.md) 
+[< Previous: Challenge 06](./Challenge-06.md) | [ Next: Challenge 07 >](./Challenge-07.md)
 
 ## Creating and Managing a Helm Chart
 
